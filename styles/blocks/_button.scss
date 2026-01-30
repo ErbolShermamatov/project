@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.button {
+    padding: rem(12) rem(24);
+    border-radius: rem(24);
+    font-weight: 500;
+    &--black {
+        color: var(--color-beige);
+        background-color: var(--color-dark);
+    }
+    &--orange {
+        color: var(--color-dark);
+        background-color: var(--color-primary-1);
+    }
+    &--gray {
+        position: relative;
+        color: var(--color-beige);
+        background-color: var(--color-dark-half-faded);
+    }
+    @include hover {
+        transform: scale(0.98);
+        opacity: 0.9;
+    }
+}

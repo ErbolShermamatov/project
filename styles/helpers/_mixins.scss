@@ -15,7 +15,7 @@
     visibility: visible;
 }
 
-@mixin flex($flex-type:flex, $jc:center, $ai:center, $dir:row, $wrap: no-wrap) {
+@mixin flex($flex-type:flex, $jc:center, $ai:center, $dir:row, $wrap: nowrap) {
     display: $flex-type;
     justify-content: $jc;
     align-items: $ai;

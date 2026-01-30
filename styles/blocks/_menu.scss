@@ -1,0 +1,44 @@
+@use '../helpers' as *;
+
+.header__menu {
+    display: none;
+    &-link, &-socials-link {
+        color: var(--color-beige);
+    }
+    
+    &.is-active {
+        display: block;
+        position: fixed;
+        z-index: 10;
+        inset: 0;
+        background-color: var(--color-dark);
+    }
+    &-inner {
+        @include flex(flex, center, center, column);
+        row-gap: rem(40);
+        height: 100%;
+    }
+    &-list {
+        width: 100%;
+        max-width: rem(500);
+        margin-inline: auto;
+        @include flex(flex, center, stretch, column);
+        row-gap: rem(12);
+    }
+    &-item {
+        padding: rem(16) rem(8);
+        border-bottom: rem(1) solid var(--color-dark-half-faded);
+    }
+    &-link {
+        width: 100%;
+    }
+    &-buttons {
+        @include flex(flex, start, start, row);
+        column-gap: rem(16);
+    }
+    &-socials {
+        @include flex(flex, start, start, row);
+        column-gap: rem(18);
+        padding-block: rem(2);
+    }
+}

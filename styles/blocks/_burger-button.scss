@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+.burger-button {
+    @include flex(flex, center, center, column);
+    @include square(rem(48));
+    @include mobile-above {
+        display: none;
+    }
+    border: none;
+    row-gap: rem(3);
+    border-radius: 50%;
+    background-color: var(--color-dark-faded);
+    &__part {
+        border-radius: rem(5);
+        width: 55%;
+        height: rem(3);
+        background-color: var(--color-dark);
+    }
+}

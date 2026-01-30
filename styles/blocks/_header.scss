@@ -1,0 +1,63 @@
+@use "../helpers" as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding-block: rem(16);
+    font-size: rem(16);
+    &__inner {
+        @include flex(flex, space-between, center);
+        background-color: var(--color-beige);
+        border-radius: var(--border-radius);
+        border: var(--border);
+        padding: rem(16) rem(24);
+
+        @include tablet {
+            padding: rem(16);
+        }
+    }
+
+    &__nav {
+        @include mobile {
+            display: none;
+        }
+        &-list {
+            @include flex(flex, start, center);
+            column-gap: rem(24);
+        }
+        &-item.is-active {
+            color: var(--color-dark);
+            padding-bottom: rem(4);
+            border-bottom: rem(4) solid var(--color-primary-2);
+            pointer-events: none;
+        }
+        &-link {
+            color: var(--color-dark);
+        }
+
+        &-item {
+            font-weight: 500;
+            border-radius: rem(2);
+            padding: rem(8);
+            color: var(--color-dark-faded);
+
+            &:hover {
+                color: var(--color-dark);
+            }
+        }
+    }
+    &__buttons {
+        @include flex(flex, start, center);
+        column-gap: rem(16);
+        position: relative;
+    }
+    &__register-button,
+    &__login-button {
+        @include mobile {
+            display: none;
+        }
+    }
+}

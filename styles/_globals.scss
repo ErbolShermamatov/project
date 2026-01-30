@@ -1,4 +1,4 @@
-@use 'helpers' as *;
+@use "helpers" as *;
 body {
     @include fluid-text(16, 14);
     font-family: var(--font-family-base), sans-serif;
@@ -6,8 +6,13 @@ body {
     background-color: var(--color-beige);
 }
 
-li {
-    font-size: rem(14);
+a {
+    text-decoration: none;
 }
 
-
+a,
+button,
+input,
+li {
+    transition-duration: .2s;
+}
