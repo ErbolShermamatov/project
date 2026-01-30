@@ -1,0 +1,24 @@
+@use 'helpers' as *;
+:root {
+    --font-family-base: 'Roboto';
+    --font-family-accent: 'Montserrat';
+
+    --color-dark: #262522;
+    --color-dark-faded: rgba(38, 37, 34, 0.24);
+    --color-beige: #F0EBE1;
+
+    --color-light: #FFFBF2;
+    --color-primary-1: #F29C33;
+    --color-primary-2: #EE6352;
+
+    --border-radius: #{rem(32)};
+    --border: #{rem(1)} solid var(--color-dark-faded); 
+
+
+    --container-size: #{rem(1312)};
+    --container-paddingX: #{rem(16)};
+
+    @include tablet {
+        --border-radius: #{rem(24)};
+    }
+}

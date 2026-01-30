@@ -1,0 +1,34 @@
+{
+  "name": "dishly",
+  "version": "1.0.0",
+  "description": "A modern, responsive landing page for a culinary recipe website built with HTML / CSS / JS / SCSS.",
+  "keywords": [
+    "frontend",
+    "html5",
+    "css3",
+    "javascript",
+    "scss",
+    "responsive-design",
+    "culinary-website",
+    "recipe-site"
+  ],
+  "homepage": "https://github.com/ErbolShermamatov/project#readme",
+  "bugs": {
+    "url": "https://github.com/ErbolShermamatov/project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErbolShermamatov/project.git"
+  },
+  "license": "ISC",
+  "author": "Erbol Shermamatov",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch ."
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}
